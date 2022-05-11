@@ -29,7 +29,7 @@
         <!-- Form fields -->
         <form action="   ">
             <!-- FIRST SECTION   -->
-            <div id="personal" class=" current-field ">
+            <div id="personal" class=" hidden ">
                 <h3>personal information</h3>
                 <label for="first-name">First Name</label>
                 <input type="text"  id="first-name">
@@ -68,7 +68,18 @@
 
             </div>
             <!-- Third section -->
-            <div id="a-litlle-more" class=" hidden"></div>
+            <div id="a-litlle-more" class=" current-field">
+                <label for="exercises">How often do you do phisical exercises?</label>
+                <select  id="dexercises">
+                    <option value="onceAYear">Once a year</option>
+                    <option value="once a month">Once a month</option>
+                    <option value="once a week">Once a week</option>
+                    <option value="more than once a week">more than once a week</option>
+                </select>
+                <p>Do you like garlic ?</p>
+               <div><label for="garlic-yes">Yes</label><input type="radio" id="garlic-yes" name="garlic" ></div>
+               <div><label for="garlic-no">NO</label><input type="radio" id="garlic-no" name="garlic" ></div>
+            </div>
             <!-- fouth section -->
             <div id="legal" class=" hidden"></div>
 
