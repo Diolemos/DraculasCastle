@@ -2,7 +2,7 @@ const progress = document.getElementById('progress')
 const prev = document.getElementById('prev')
 const next = document.getElementById('next')
 const circles  = document.querySelectorAll('.circle')
-
+const form = document.querySelectorAll("form")
 let currentActive = 1;
 
 update()
@@ -48,3 +48,7 @@ function update(){
       next.disabled = false;
   }
 }
+
+document.querySelector("form").addEventListener("click", function(event){
+    event.preventDefault()
+  });
