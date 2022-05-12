@@ -68,7 +68,7 @@
 
             </div>
             <!-- Third section -->
-            <div id="a-litlle-more" class=" current-field">
+            <div id="a-litlle-more" class=" hidden">
                 <label for="exercises">How often do you do phisical exercises?</label>
                 <select  id="dexercises">
                     <option value="onceAYear">Once a year</option>
@@ -77,11 +77,26 @@
                     <option value="more than once a week">more than once a week</option>
                 </select>
                 <p>Do you like garlic ?</p>
-               <div><label for="garlic-yes">Yes</label><input type="radio" id="garlic-yes" name="garlic" ></div>
-               <div><label for="garlic-no">NO</label><input type="radio" id="garlic-no" name="garlic" ></div>
+                <div>
+                    <input type="radio" id="garlic-yes" name="garlic" value="garlic-yes"
+                           >
+                    <label for="garlic-yes">Yes</label>
+                  </div>
+              
+                  <div>
+                    <input type="radio" id="garlic-no" name="garlic" value="no">
+                    <label for="garlic-no">No</label>
+                  </div>
             </div>
             <!-- fouth section -->
-            <div id="legal" class=" hidden"></div>
+            
+            <div id="legal" class=" current-field">
+                <h4>We are almost there</h4>
+            <label for="experience">Do you have experience visiting castles? <input type="checkbox" name="experience" id="experience"> </label>
+
+            <label for="bio">
+            <textarea name="bio" id="bio" cols="30" rows="10" minlength="15" placeholder="Write a little bit about yourself and your interests"></textarea>
+            </div>
 
 
              <!-- Buttons -->
